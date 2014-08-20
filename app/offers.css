@@ -7,3 +7,11 @@
 .offers__cat-list-item--active {
   color: magenta;
 }
+
+.offers__panel-item {
+  float: left;
+}
+
+.hidden {
+  display: none;
+}
