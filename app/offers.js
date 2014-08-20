@@ -6,14 +6,14 @@ $(function(){
         template = $('#mustache').html(),
         html     = Mustache.render(template, data);
 
-    data.offers.forEach(function (offer, index) {
-      catArray.push(offer.category)
-    })
-
-    alert(catArray)
+    data.offers.forEach(function (offer) {
+      catArray.push(offer.category);
+    });
 
     $('.offers__panel').html(html);
-  })
+
+    alert(catArray);
+  });
 
   var catItems = $('.offers__cat-list-item');
 
