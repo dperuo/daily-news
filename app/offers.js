@@ -1,11 +1,23 @@
 $(function(){
 
+  var catItems = $('.offers__cat-list-item');
+
   $.getJSON('app/offers.json', function(data) {
     var offers = $(data.offers);
 
     //stuff here
 
   })
+
+  catItems.on('click', clickMe);
+
+  function clickMe() {
+
+    var activeClass = 'offers__cat-list-item--active';
+
+    catItems.removeClass(activeClass);
+    $(this).addClass(activeClass);
+  }
 
 });
 
