@@ -12,9 +12,7 @@ $(function(){
   catItems.on('click', clickMe);
 
   function clickMe() {
-
     var activeClass = 'offers__cat-list-item--active';
-
     catItems.removeClass(activeClass);
     $(this).addClass(activeClass);
   }

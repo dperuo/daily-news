@@ -1,3 +1,9 @@
+
+
+.offers__cat-list-item {
+  list-style-type: none;
+}
+
 .offers__cat-list-item--active {
   color: magenta;
 }
