@@ -15,6 +15,8 @@
 
 
 
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
 /* --------------- RESET --------------- */
   * {
     margin:     0;
@@ -28,10 +30,11 @@
 
 /* --------------- OFFER MODULE --------------- */
   .offers {
-    position: absolute;
-    width:    635px;
-    height:   247px;
-    border:   10px solid silver;
+    position:    absolute;
+    width:       635px;
+    height:      247px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    border:      10px solid silver;
   }
 
   .offers__window {
@@ -73,6 +76,7 @@
   .offers__cat-list {
     position:         absolute;
     bottom:           0;
+    width:            134px;
     height:           227px;
     padding-top:      60px;
     text-align:       right;
@@ -83,8 +87,10 @@
 
   .offers__cat-list-item {
     list-style-type: none;
-    padding-right:   10px;
-    line-height:     3;
+    padding-top:     10px;
+    padding-bottom:  10px;
+    padding-right:   13px;
+    font-size:       14px;
     border-top:      1px solid #666;
   }
 
@@ -96,8 +102,12 @@
     border-top: none;
     background-repeat: no-repeat;
     background-image: linear-gradient(to left, #666, rgba(0,0,0,0) 70%);
-    background-position: bottom right;
+    background-position: top right;
     background-size: 100% 1px;
+  }
+
+  .cssgradients .offers__cat-list-item:first-child {
+    background: none;
   }
 
   .offers__cat-list-item--active {
