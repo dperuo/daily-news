@@ -9,30 +9,32 @@
 <body>
   <div class="offers">
 
-    <img class="offers__arrow offers__arrow--left" src="app/img/arrow-left.png">
-    <img class="offers__arrow offers__arrow--right" src="app/img/arrow-right.png">
-    <img class="offers__logo" src="app/img/offer-logo.png" alt="Daily News Reader Offers!">
 
-    <ul class="offers__cat-list">
+    <ul class="offers__cat-list" dp-dn>
       <li class="offers__cat-list-item offers__cat-list-item--active" data-cat="Travel">Travel</li>
       <li class="offers__cat-list-item" data-cat="Events & Activities">Events &amp; Activities</li>
       <li class="offers__cat-list-item" data-cat="Dining">Dining</li>
     </ul>
 
-    <dl class="offers__panel">
+    <div class="offers__window">
+      <dl class="offers__panel">
+        <script id="mustache" type="text/mustache-template">
+          {{#offers}}
+            <div class="offers__panel-item" data-cat="{{category}}">
+              <dd class="offers__panel-price">{{price}}</dd>
+              <dd class="offers__panel-img"><img src="{{image}}" width="214"></dd>
+              <dt class="offers__panel-header">{{header}}</dt>
+              <a class="offers__panel-link" href="#">View Deal</a>
+            </div>
+          {{/offers}}
+        </script>
+      </dl>
+    </div>
 
-      <script id="mustache" type="text/mustache-template">
-        {{#offers}}
-          <div class="offers__panel-item" data-cat="{{category}}" style="display:none;">
-            <dt class="offers__panel-header">{{header}}</dt>
-            <dd class="offers__panel-img"><img src="{{image}}"></dd>
-            <dd class="offers__panel-price">{{price}}</dd>
-            <a class="offers__panel-link" href="#">View Deal</a>
-          </div>
-        {{/offers}}
-      </script>
+    <img class="offers__arrow offers__arrow--right" src="app/img/arrow-right.png">
+    <img class="offers__arrow offers__arrow--left" src="app/img/arrow-left.png">
+    <img class="offers__logo" src="app/img/offer-logo.png" alt="Daily News Reader Offers!">
 
-    </dl>
   </div>
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
