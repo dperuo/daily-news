@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Daily News | Reader Offers</title>
-  <script src="app/vendor/modernizr-latest-v2.8.3.js"></script>
+  <script src="app/vendor/modernizr-latest-v2.8.3.js" async></script>
   <link rel="stylesheet" href="app/css/offers.css">
 </head>
 <body>
@@ -25,7 +25,9 @@
               <dd class="offers__panel-price">{{price}}</dd>
               <dd class="offers__panel-img"><img src="{{image}}" width="214"></dd>
               <dt class="offers__panel-header">{{header}}</dt>
-              <a class="offers__panel-link" href="#">View Deal</a>
+              <a class="offers__panel-link" href="{{url}}">
+                <img class="offers__link-button" src="app/img/offer-btn.png">
+              </a>
             </div>
           {{/offers}}
         </script>

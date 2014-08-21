@@ -9,9 +9,7 @@
     padding: 100px;
   }
 
-  [dp-dn] {
-    display: none;
-  }
+
 
 
 
@@ -151,6 +149,14 @@
 
   .offers__panel-item:hover {
     background-color: #373636;
+  }
+
+  .offers__link-button {
+    position: relative;
+    top:      -46px;
+    left:     145px;
+    /*width:    62px;*/
+    /*height:   19px;*/
   }
 
   .offers__panel-price {
