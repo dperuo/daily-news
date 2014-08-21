@@ -137,10 +137,15 @@
     position:         relative;
     float:            left;
     padding-left:     17px;
-    width:            247px;
+    width:            246px;
     height:           227px;
     color:            white;
     background-color: #2b2a2a;
+    border-left:      1px solid #999999;
+  }
+
+  .offers__panel-item:first-child {
+    border-left: none;
   }
 
   .offers__panel-item:hover {
