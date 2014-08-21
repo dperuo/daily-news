@@ -1,5 +1,9 @@
 $(function(){
 
+  var catItems = $('.offers__cat-list-item');
+
+
+  // --------------- GET JSON --------------- //
   $.getJSON('app/js/offers.json', function(data) {
 
     var catArray = [],
@@ -11,14 +15,15 @@ $(function(){
     });
 
     $('.offers__panel').html(html);
-
-    // alert(catArray);
   });
 
-  var catItems = $('.offers__cat-list-item');
 
+  // --------------- EVENT HANDLERS --------------- //
   catItems.on('click', clickMe);
 
+
+
+  // --------------- FUNCTIONS --------------- //
   function clickMe() {
     var activeClass = 'offers__cat-list-item--active';
     catItems.removeClass(activeClass);
