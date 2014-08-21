@@ -45,7 +45,8 @@
 
   .offers__window {
     display:  block;
-    float:    right;
+    position: absolute;
+    right:    0;
     width:    481px;
     overflow: auto;
   }
@@ -152,4 +153,14 @@
     background-color: #373636;
   }
 
+  .offers__panel-price {
+    position: absolute;
+    right:    31px;
+    top:      22px;
+  }
+
+  .offers__price-banner {
+    position: absolute;
+    right:    24px;
+  }
 
