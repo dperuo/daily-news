@@ -37,10 +37,16 @@
     border:      10px solid silver;
   }
 
+  .borderimage .offers {
+    border: none;
+    border-image: url('../img/module-bg.png') 10 10 10 10 repeat;
+    border-width: 10px;
+  }
+
   .offers__window {
     display:  block;
     float:    right;
-    width:    494px;
+    width:    481px;
     overflow: auto;
   }
 
@@ -66,7 +72,7 @@
   }
 
   .offers__panel-img {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width:  214px;
   }
 
@@ -128,7 +134,9 @@
   }
 
   .offers__panel-item {
+    position:         relative;
     float:            left;
+    padding-left:     17px;
     width:            247px;
     height:           227px;
     color:            white;
