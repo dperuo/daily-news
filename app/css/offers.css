@@ -55,7 +55,7 @@
   }
 
   .offers__arrow--left {
-    left: 135px;
+    left: 134px;
   }
 
   .offers__arrow--right {
@@ -78,18 +78,26 @@
     text-align:       right;
     background-color: #161616;
     color:            white;
-    border-right:     2px solid #666;
+    border-right:     1px solid #666;
   }
 
   .offers__cat-list-item {
     list-style-type: none;
     padding-right:   10px;
     line-height:     3;
-    border-top:      2px solid #666;
+    border-top:      1px solid #666;
   }
 
   .offers__cat-list-item:first-child {
     border-top: none;
+  }
+
+  .cssgradients .offers__cat-list-item {
+    border-top: none;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, #666, rgba(0,0,0,0) 70%);
+    background-position: bottom right;
+    background-size: 100% 1px;
   }
 
   .offers__cat-list-item--active {
