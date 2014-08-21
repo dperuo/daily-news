@@ -151,10 +151,6 @@
     background-color: #373636;
   }
 
-  .offers__panel-link {
-    display: none;
-  }
-
   .offers__link-button {
     position: relative;
     top:      -45px;
