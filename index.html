@@ -3,21 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>Daily News | Reader Offers</title>
-  <script src="app/modernizr-latest-v2.8.3.js"></script>
-  <link rel="stylesheet" href="app/offers.css">
+  <script src="app/vendor/modernizr-latest-v2.8.3.js"></script>
+  <link rel="stylesheet" href="app/css/offers.css">
 </head>
 <body>
   <div class="offers">
-    <h1>Daily News Reader Offers</h1>
+
+    <img class="offers__arrow offers__arrow--left" src="app/img/arrow-left.png">
+    <img class="offers__arrow offers__arrow--right" src="app/img/arrow-right.png">
+    <img class="offers__logo" src="app/img/offer-logo.png" alt="Daily News Reader Offers!">
+
     <ul class="offers__cat-list">
       <li class="offers__cat-list-item offers__cat-list-item--active" data-cat="Travel">Travel</li>
       <li class="offers__cat-list-item" data-cat="Events & Activities">Events &amp; Activities</li>
       <li class="offers__cat-list-item" data-cat="Dining">Dining</li>
     </ul>
+
     <dl class="offers__panel">
+
       <script id="mustache" type="text/mustache-template">
         {{#offers}}
-          <div class="offers__panel-item" data-cat="{{category}}">
+          <div class="offers__panel-item" data-cat="{{category}}" style="display:none;">
             <dt class="offers__panel-header">{{header}}</dt>
             <dd class="offers__panel-img"><img src="{{image}}"></dd>
             <dd class="offers__panel-price">{{price}}</dd>
@@ -25,11 +31,12 @@
           </div>
         {{/offers}}
       </script>
+
     </dl>
   </div>
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
-<script src="app/offers.js"></script>
+<script src="app/js/offers.js"></script>
 </body>
 </html>

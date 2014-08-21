@@ -1,0 +1,95 @@
+/*
+ *
+ *  OFFERS.CSS
+ *
+ */
+
+/* --------------- DEBUG --------------- */
+  body {
+    padding: 100px;
+  }
+
+
+
+/* --------------- RESET --------------- */
+  * {
+    margin:     0;
+    padding:    0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+
+
+/* --------------- IMAGES --------------- */
+  .offers__logo {
+    position: absolute;
+    top: -11px;
+  }
+
+  .offers__arrow {
+    position: absolute;
+  }
+
+  .offers__arrow--left {
+    left: 123px;
+    top:  -3px;
+  }
+
+  .offers__arrow--right {
+    right:    0;
+    top:      -2px;
+  }
+
+
+
+/* --------------- CAT LIST --------------- */
+  .offers__cat-list {
+    /*display: block;*/
+    /*width:   123px;*/
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+  }
+
+
+
+/* --------------- MODULE --------------- */
+  .offers {
+    position: absolute;
+    width:    635px;
+    height:   247px;
+    border:   10px solid silver;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .offers__cat-list-item {
+    list-style-type: none;
+  }
+
+.offers__cat-list-item--active {
+  color: magenta;
+}
+
+.offers__panel-item {
+  float: left;
+}
+
+.hidden {
+  display: none;
+}

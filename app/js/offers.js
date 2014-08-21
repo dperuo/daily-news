@@ -1,6 +1,6 @@
 $(function(){
 
-  $.getJSON('app/offers.json', function(data) {
+  $.getJSON('app/js/offers.json', function(data) {
 
     var catArray = [],
         template = $('#mustache').html(),
@@ -12,7 +12,7 @@ $(function(){
 
     $('.offers__panel').html(html);
 
-    alert(catArray);
+    // alert(catArray);
   });
 
   var catItems = $('.offers__cat-list-item');
