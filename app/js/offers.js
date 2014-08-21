@@ -1,32 +1,34 @@
 $(function(){
 
-  var catItems = $('.offers__cat-list-item');
+  var activeClass = 'offers__cat-list-item--active',
+      catArray    = [],
+      catItems    = '.offers__cat-list-item',
+      json        = 'app/js/offers.json',
+      offerPanel  = '.offers__panel';
+      template    = $('#mustache').html();
+
 
 
   // --------------- GET JSON --------------- //
-  $.getJSON('app/js/offers.json', function(data) {
-
-    var catArray = [],
-        template = $('#mustache').html(),
-        html     = Mustache.render(template, data);
+  $.getJSON(json, function(data) {
 
     data.offers.forEach(function (offer) {
       catArray.push(offer.category);
     });
 
-    $('.offers__panel').html(html);
+    $(offerPanel).html(Mustache.render(template, data));
   });
 
 
+
   // --------------- EVENT HANDLERS --------------- //
-  catItems.on('click', clickMe);
+  $(catItems).on('click', clickMe);
 
 
 
   // --------------- FUNCTIONS --------------- //
   function clickMe() {
-    var activeClass = 'offers__cat-list-item--active';
-    catItems.removeClass(activeClass);
+    $(catItems).removeClass(activeClass);
     $(this).addClass(activeClass);
   }
 });
