@@ -98,7 +98,7 @@
     border-top: none;
   }
 
-  .cssgradients .offers__cat-list-item {
+  .cssgradients.backgroundsize .offers__cat-list-item {
     border-top: none;
     background-repeat: no-repeat;
     background-image: linear-gradient(to left, #666, rgba(0,0,0,0) 70%);
@@ -106,7 +106,7 @@
     background-size: 100% 1px;
   }
 
-  .cssgradients .offers__cat-list-item:first-child {
+  .cssgradients.backgroundsize .offers__cat-list-item:first-child {
     background: none;
   }
 
