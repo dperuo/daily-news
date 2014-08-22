@@ -20,22 +20,22 @@ JSON data loads via jQuery's `$.getJSON()` method. jQuery v1.11.1 keeps IE8 comp
 
 ### Still To Do
 
-- **Code dynamic category list loading:**
+- [ ] **Code dynamic category list loading:**
   The category list is currently hard coded into the markup. This list should load dynamically from the JSON data. The data is passed to a function that sorts the category list into an array and removes duplicate entries. This array is then loaded into the Mustache template.
 
-- **Code images as CSS3:**
+- [ ] **Code images as CSS3:**
   Images are used for the logo, arrows, and price banners. These elements should be coded using CSS3, with images as fallbacks.
 
-- **Code event handlers for category switching:**
+- [ ] **Code event handlers for category switching:**
   Event handlers for switching between categories are needed. The handlers listen for clicks and scroll the appropriate offer panels into view.
 
-- **Code event handlers for hiding and showing elements:**
+- [ ] **Code event handlers for hiding and showing elements:**
   Event handlers for hiding and showing the "View Deal" button are needed. This handler listens for mouse hover and manipulates the appropriate button.
 
-- **Add touchscreen functionality:**
+- [ ] **Add touchscreen functionality:**
   Swipe and fastclick controls.
 
-- **Minify and concatenate assets:**
+- [ ] **Minify and concatenate assets:**
   JavaScript, CSS, and images.
 
 [nydn]:   http://nydailynews.com
